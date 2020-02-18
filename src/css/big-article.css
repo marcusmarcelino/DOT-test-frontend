@@ -1,0 +1,25 @@
+/*big-article*************************/
+.big-article {
+  background-color: 	#707070;
+  grid-template-columns: 350px auto;
+}
+
+.big-article header h2 {
+  margin-top: 0;
+}
+
+.big-article article p:nth-child(3){
+  font-weight: bold;
+}
+
+.big-article article p:nth-child(4){
+  font-style: italic;
+}
+
+.big-article figure img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 350px;
+  max-height: 350px;
+  border: 10px solid #272729;
+}

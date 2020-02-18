@@ -1,0 +1,75 @@
+/*Geral*************************/
+html,
+body,
+div,
+article,
+section,
+nav,
+h1,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+}
+
+h1,h2,h3 {
+  text-transform: uppercase;
+}
+
+/*Compartilhamento de propriedades. Boas práticas de programação, refatoramento de código*************************/
+.small-article-content,
+.big-article {
+  display: grid;
+  grid-gap: 45px;
+  align-items: center;
+
+  padding: 2rem 4rem;
+
+  transition: all 400ms;
+}
+
+.small-article-content,
+.big-article,
+footer {
+  color: #fff;
+}
+
+.banner,
+section.small-article,
+.small-article-content,
+.big-article figure,
+footer{
+  text-align: center;
+}
+
+/*Resposividade*************************/
+@media only screen and (max-width: 800px) {
+  .banner nav{
+    background-color: #424242;
+    padding: 0.5rem 2rem!important;
+  }
+
+  .banner nav h1, .banner nav p {
+    color: #fff!important;
+  }
+
+  .big-article,
+  .small-article-content {
+    text-align: center;
+    grid-gap: 20px;
+    display: grid!important;
+    grid-template-columns: 1fr!important;
+    padding: 2rem 0.3rem!important;
+  }
+}
